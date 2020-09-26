@@ -6,12 +6,12 @@ import sys
 length = int(input("How many characters do you want your password to be? "))
 
 # Checks if user's password length is longer than 24 characters, so that it doesn't overload a machine.
-if(length > 24):
+if(length > 256):
     print("You cannot have a password that long.")
     input("Press enter to exit...")
     sys.exit()
 
-if(length < 4):
+if(length < 8):
     print("You cannot have a password that short.")
     input("Press enter to exit...")
     sys.exit()
